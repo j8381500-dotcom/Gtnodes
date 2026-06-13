@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status | GT Nodes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { margin: 0; background: #000 url('background.jpg') no-repeat center center fixed; background-size: cover; color: #fff; font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 10, 10, 0.85); backdrop-filter: blur(10px); z-index: -1; }
+        .container { background: rgba(255, 255, 255, 0.05); padding: 40px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; width: 90%; max-width: 400px; }
+        .service { background: rgba(255, 255, 255, 0.03); padding: 15px 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; margin: 12px 0; border: 1px solid rgba(255,255,255,0.05); }
+        .online { color: #00ff88; font-weight: 800; font-size: 0.8rem; display: flex; align-items: center; gap: 8px; }
+        .dot { width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+        .back { margin-top: 25px; display: block; color: #00d4ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="gtnodes.jpg" style="width: 60px; height: 60px; border-radius: 15px; margin-bottom: 15px;">
+        <h1 style="margin-bottom: 20px;">System Status</h1>
+        <div class="service"><span>Panel</span><div class="online"><div class="dot"></div> ONLINE</div></div>
+        <div class="service"><span>Nodes</span><div class="online"><div class="dot"></div> ONLINE</div></div>
+        <a href="index.html" class="back">← Back to Home</a>
+    </div>
+</body>
+</html>
